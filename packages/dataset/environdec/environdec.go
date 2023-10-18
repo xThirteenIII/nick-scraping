@@ -65,7 +65,7 @@ func GetEnvirondecPDFs(categoryID, limit, categoryName string){
 
     fmt.Println(requestNumber+1, "/", len(parsedResponse))
 
-    time.Sleep( time.Second * 5)
+    time.Sleep( time.Second * 2)
 
   }
 
