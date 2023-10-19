@@ -130,7 +130,7 @@ func downloadFileFrom(uri, fileName, dirName string) {
      fmt.Println(err.Error())
     }
 
-    fileHandle, err := os.OpenFile(pwd+"/"+dirName+"/"+fileName, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0644)
+    fileHandle, err := os.OpenFile(pwd+"/"+dirName+"/"+fileName+".pdf", os.O_CREATE|os.O_APPEND|os.O_RDWR, 0644)
     if err != nil {
         panic(err)
     }
